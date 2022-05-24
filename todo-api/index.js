@@ -10,7 +10,7 @@ const port = 4000;
 
 app.use(express.json());
 
-app.get('/', (_, res) => res.send('Hello, this is the To-Do API!'));
+app.get('/', (_, res) => res.send('<h1>Hello, this is the To-Do API!</h1>'));
 
 app.get('/items', (_, res) => {
   res.send(db.getAll());
